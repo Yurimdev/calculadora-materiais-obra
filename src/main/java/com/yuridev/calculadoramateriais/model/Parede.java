@@ -4,26 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Parede {
-    private String id;
-    private Pilar origem;
-    private Pilar destino;
-    private double espessura;
-    private double altura;
-    private double comprimento;
-    private List<Abertura> aberturas = new ArrayList<>();
+    private String idParede;
+    private Pilar verticeInicial;
+    private Pilar verticeFinal;
+    private double grossura;
+    private double peDireito; // altura
+    private double dimensaoComprimento;
+    private List<Esquadria> listaEsquadrias = new ArrayList<>();
 
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
-    public Pilar getOrigem() { return origem; }
-    public void setOrigem(Pilar origem) { this.origem = origem; }
-    public Pilar getDestino() { return destino; }
-    public void setDestino(Pilar destino) { this.destino = destino; }
-    public double getEspessura() { return espessura; }
-    public void setEspessura(double espessura) { this.espessura = espessura; }
-    public double getAltura() { return altura; }
-    public void setAltura(double altura) { this.altura = altura; }
-    public double getComprimento() { return comprimento; }
-    public void setComprimento(double comprimento) { this.comprimento = comprimento; }
-    public List<Abertura> getAberturas() { return aberturas; }
-    public void setAberturas(List<Abertura> aberturas) { this.aberturas = aberturas; }
+    public String getIdParede() { return idParede; }
+    public void setIdParede(String idParede) { this.idParede = idParede; }
+    public Pilar getVerticeInicial() { return verticeInicial; }
+    public void setVerticeInicial(Pilar verticeInicial) { this.verticeInicial = verticeInicial; }
+    public Pilar getVerticeFinal() { return verticeFinal; }
+    public void setVerticeFinal(Pilar verticeFinal) { this.verticeFinal = verticeFinal; }
+    public double getGrossura() { return grossura; }
+    public void setGrossura(double grossura) { this.grossura = grossura; }
+    public double getPeDireito() { return peDireito; }
+    public void setPeDireito(double peDireito) { this.peDireito = peDireito; }
+    public double getDimensaoComprimento() { return dimensaoComprimento; }
+    public void setDimensaoComprimento(double dimensaoComprimento) { this.dimensaoComprimento = dimensaoComprimento; }
+    public List<Esquadria> getListaEsquadrias() { return listaEsquadrias; }
+    public void setListaEsquadrias(List<Esquadria> listaEsquadrias) { this.listaEsquadrias = listaEsquadrias; }
 }
